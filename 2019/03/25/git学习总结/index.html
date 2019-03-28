@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>没头脑和不高兴的个人博客</title>
+    <title>git学习总结 · 没头脑和不高兴的个人博客</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -77,6 +77,8 @@
 
     <link rel="preload" href="/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="/css/mobile.css?v=20180824" media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
@@ -201,14 +203,23 @@
 </head>
 
     
-        <body class="home-body">
+        <body class="post-body">
     
     
-<header class="header index-header">
+<header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/">不高兴的个人博客</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">git学习总结</a>
+            </div>
+    </div>
     
     <a class="home-link" href="/">不高兴的个人博客</a>
 </header>
@@ -227,17 +238,17 @@ height:50vh;
     <!-- 主页  -->
     
     
-    <!-- 文章页  -->
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/intro/index-bg.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            不高兴的个人博客
-            <!-- 文章页  -->
+            git学习总结
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
@@ -245,12 +256,43 @@ height:50vh;
             <!-- 主页副标题  -->
             
             
-                小舟从此逝，天地一沙鸥
-            
-            <!-- 文章页  -->
+            <!-- 404 -->
             
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                
+                    <div class="post-intro-read">
+                        <span>字数统计: <span class="post-count word-count">637</span>阅读时长: <span class="post-count reading-time">2 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2019/03/25</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -351,392 +393,71 @@ height:50vh;
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/03/28/龙族5-第19-12章/">
-            
-                <span>龙族5-第19-12章</span>
-        </a>
-        <div class="abstract-content">
-            龙族5：第19章 故人(1)
-罗马郊外，广阔的苜蓿田里，一座古旧的修道院，门前古树茵茵。
-　　一辆银色的阿斯顿·马丁敞篷车沿着蜿蜿蜒蜒的小路开来，车屁股后面拴着一串可乐罐子，可乐罐子在地面上碰撞发出叮呤咣啷的欢快声音。
-　　乘客是一对男女，容貌相互辉映，男人一身白色的亚麻西装，挺拔、清瘦，络腮短须，皮肤晒成健康的小麦色，典型的意大利美男子。
-　　他的女伴是位拉丁美人，也是小麦色的皮肤，野性、风情，一身紧身包臀的白色蕾丝裙，凸凹有致。
-　　他们不时地对视，开着车也十指相扣，一眼就能看出是热恋情侣或者新婚夫妇。
-　　车在修道院门口停下，男人立刻扑上去跟拉丁美人深吻，吻到两个人都喘不上气来才暂...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/03/28</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
+            <main class="main post-page">
+    <article class="article-entry">
+        <h1 id="git-学习总结及常见命令说明"><a href="#git-学习总结及常见命令说明" class="headerlink" title="git 学习总结及常见命令说明"></a>git 学习总结及常见命令说明</h1><h2 id="创建版本库（repository）"><a href="#创建版本库（repository）" class="headerlink" title="创建版本库（repository）"></a>创建版本库（repository）</h2><p>​    版本库，用通俗的话来说，相当于新建一个文件夹，里面用于存放你写的各种文件，然后git通过你对文件的更改信息，帮你进行版本管理。</p>
+<p>​    在安装好git之后，Windows系统中创建版本库的方法十分简单，你只需要新建一个文件夹，这个文件夹之后会用于存放你写的代码等文件（同时需要注意的是，为了避免各种意想不到的问题，请确保存储路径中不存在中文）；当然光创建一个文件夹是不够的，你还需要告诉git，你创建的版本库repository位于这里，比如我在D:\Git\ku\ 下新建了一个文件夹叫做newmodel，计划用于我新模型的开发，如图所示：</p>
+<p><img src="/2019/03/25/git学习总结/版本库创建-1.png" alt="版本库创建-1"></p>
+<p>那么下一步，我只需在资源地址栏中输入cmd并回车，Windows会自动帮我们打开命令行工具，并已经cd到当前文件夹。</p>
+<p><img src="/2019/03/25/git学习总结/版本库创建-2.png" alt="版本库创建-2"></p>
+<p>在出现的命令行中输入：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`git init`</span><br></pre></td></tr></table></figure>
+<p><img src="/2019/03/25/git学习总结/版本库创建-3.png" alt="版本库创建-3"></p>
+<p>​    成功后会出现成功提示，这样你的一个版本库就创建完成啦，现在我们来尝试着往里面写点东西吧。这里有一个坑是，Windows用户不要尝试用自带的记事本来写任何文件，原因是Microsoft开发记事本的团队使用了一个非常弱智的行为来保存UTF-8编码的文件，他们自作聪明地在每个文件开头添加了0xefbbbf（十六进制）的字符，你会遇到很多不可思议的问题，比如，网页第一行可能会显示一个“?”，明明正确的程序一编译就报语法错误，等等，都是由记事本的弱智行为带来的。建议你下载<a href="http://notepad-plus-plus.org/" target="_blank" rel="noopener">Notepad++</a>代替记事本，不但功能强大，而且免费！</p>
+<p>​    我在该文件夹中新建了一个ceshi.py文件，里面只写了一句注释：</p>
+<p>​    <code># it seems fun to use git</code></p>
+<p>​    我们看起来对这个版本库作了一些改动，但是我们还没有告诉git这些改动，我们需要告知它一下，告知的过程分为两步：</p>
+<p>​    第一步：用命令<code>git add</code>告诉Git，把文件添加到仓库：</p>
+<p>​    <code>git add ceshi.py</code></p>
+<p>​    第二步：用命令<code>git commit</code>告诉Git，把文件提交到仓库：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">"wrote a ceshi.py</span></span><br><span class="line"><span class="string">[master (root-commit) 8e8990c] wrote a ceshi.py</span></span><br><span class="line"><span class="string"> 1 file changed, 1 insertion(+)</span></span><br><span class="line"><span class="string"> create mode 100644 ceshi.py</span></span><br></pre></td></tr></table></figure>
+
     </article>
+    <!-- license  -->
     
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/03/28/龙族5-第15-18章/">
-            
-                <span>龙族5-第15-18章</span>
-        </a>
-        <div class="abstract-content">
-            龙族5 第15章 全民公敌（14）
-　　“我们不会在中国境内使用武器，那无疑会惊动军队导致不必要的麻烦，我们无法应对那些麻烦。”贝奥武夫缓缓地说，“即使使用武器也不该是天谴之剑，我们的首要目的是捕获而不是摧毁，摧毁只是最终手段。先假设那个信号源确实在路明非的车上，推算他们前进的方向。”
-　　“推算已经完成，预计他们会从高速公路进入无人区，设法从边境某处离开中国，最可能的目的地国为俄罗斯，其次分别是蒙古和经由新疆北部前往哈萨克斯坦，更为准确的路线我已经标记出来。”
-　　地图上立刻出现了预测出来的行车路线，贝奥武夫眯着眼睛看了很久。
-　　“可以放出猎犬们了。”片刻之后他下达了命令，“让他们带...
+        <div class="license-wrapper">
+            <p>原文作者：<a href="hyywestwood.github.io">没头脑和不高兴</a>
+            </p><p>原文链接：<a href="hyywestwood.github.io/2019/03/25/git学习总结/">hyywestwood.github.io/2019/03/25/git学习总结/</a>
+            </p><p>发表日期：<a href="hyywestwood.github.io/2019/03/25/git学习总结/">March 25th 2019, 8:45:43 pm</a>
+            </p><p>更新日期：<a href="hyywestwood.github.io/2019/03/25/git学习总结/">March 26th 2019, 12:46:35 pm</a>
+            </p><p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/03/28</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/03/28/龙族5-第11-14章/">
-            
-                <span>龙族5-第11-14章</span>
-        </a>
-        <div class="abstract-content">
-            龙族5 第11章 全民公敌（10）
-　漫长的沉默，无人可以反驳。
-　　人类可以豢养猫咪，像对待家人一样宠爱它，但在看见野外的狮子时，却会毫不犹豫地取出猎枪。
-　　同是猫科动物，人类却总是赞美着猫咪的可爱，选择性地忘记它和狮子一样是矫健的猎食动物。
-　　狮子的错误，在于它太强大，如果猫咪有着狮子一样的体型，人类也会对它们掏出猎枪来。
-　　“EVA，下达最高级别的缉捕令，我要召集每个能召集的人。”贝奥武夫一字一顿，“这是一场以全世界为范围的捕猎。”
-　　***
-　　伦敦，早晨七点。
-　　天空中布满铅灰色的云块，黑色的劳斯莱斯轿车平稳地行驶在红色的礼宾大道上。
-　　司机白发苍苍，西装革履，胸前...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/03/28</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/03/28/龙族5-第7-10章/">
-            
-                <span>龙族5-第7-10章</span>
-        </a>
-        <div class="abstract-content">
-            龙族五 第7章 全民公敌（6）
-　“无人机十五秒后会经过你的上空，我会最后一次给你们空投装备。”EVA说，“我能想到的东西都放进去了。”
-　　诺诺走出火锅店，仰头就看到了夜空下那刺眼的亮光，无人机低空飞掠火锅店所在的街道。
-　　它的下方，一朵黑色的伞花张开，降落伞带着沉重的铝制手提箱，准确地落在距离诺诺不到十米的地方。
-　　无人机空投之后直接远去，带着陡峭的弧线扎入上方的黑云中。
-　　诺诺打开装备箱，快速地检查，学院的装备箱有很多的规格，应对不同的任务，而这个装备箱是诺诺见过的最完备的，堪称无所不包。
-　　武器，从短小精致的手枪到方便好用的掷刀，还有塑料弹壳的弗里嘉子弹，能够通过机场的安...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/03/28</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/03/28/龙族5-第3-6章/">
-            
-                <span>龙族5-第3-6章</span>
-        </a>
-        <div class="abstract-content">
-            龙族五 第3章 全民公敌（2）
-他很想跟那家伙聊聊，可惜做不到，作为校董会的成员之一，恺撒原本持有一张级别很高的黑卡，有权踏入这间学院的几乎任何房间，但黑卡“暂时地”被收走了，原因可想而知。所以阿巴斯拿到了通行证就来找他了。
-阿巴斯总是这样，他来帮你的时候，总是云淡风轻，不会让你感觉像是得了他的恩惠。
-路明非缓缓地睁开眼睛，还没来得及看清周遭的景象，剧烈的痛感就袭来，疼得他止不住地哆嗦。
-莫非真的是完成交易之后就死了？醒来的时候自己挂在地狱的刀山上？
-他竭力睁开眼睛——眼皮都疼得不行——看清了所在的环境，他躺在一张非常考究的床上，身下是柔软舒适的埃及长绒棉床单，这间屋子也非常考究，家具和...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/03/28</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/03/28/Matplotlib使用/">
-            
-                <span>Matplotlib使用</span>
-        </a>
-        <div class="abstract-content">
-            介绍Matplotlib 可能是 Python 2D-绘图领域使用最广泛的套件。它能让使用者很轻松地将数据图形化，并且提供多样化的输出格式。这里将会探索 matplotlib 的常见用法。
-IPython 以及 pylab 模式IPython 是 Python 的一个增强版本。它在下列方面有所增强：命名输入输出、使用系统命令（shell commands）、排错（debug）能力。我们在命令行终端给 IPython 加上参数 -pylab （0.12 以后的版本是 --pylab）之后，就可以像 Matlab 或者 Mathematica 那样以交互的方式绘图。
-pylabpylab 是...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/03/28</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/03/25/git学习总结/">
-            
-                <span>git学习总结</span>
-        </a>
-        <div class="abstract-content">
-            git 学习总结及常见命令说明创建版本库（repository）​    版本库，用通俗的话来说，相当于新建一个文件夹，里面用于存放你写的各种文件，然后git通过你对文件的更改信息，帮你进行版本管理。
-​    在安装好git之后，Windows系统中创建版本库的方法十分简单，你只需要新建一个文件夹，这个文件夹之后会用于存放你写的代码等文件（同时需要注意的是，为了避免各种意想不到的问题，请确保存储路径中不存在中文）；当然光创建一个文件夹是不够的，你还需要告诉git，你创建的版本库repository位于这里，比如我在D:\Git\ku\ 下新建了一个文件夹叫做newmodel，计划用于我...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/03/25</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/03/25/longzu5 1-3zhang/">
-            
-                <span>龙族5悼亡者的归来 1-3章在线阅读</span>
-        </a>
-        <div class="abstract-content">
-            龙族5悼亡者的归来 1-3章在线阅读第一章“一个男人要走过多少路，才能被称作男人。”——鲍勃·迪伦
-第二章 全民公敌（1）这是地狱中的魔王们相互撕咬。铁剑和利爪撕裂空气，留下霜冻和火焰的痕迹，血液刚刚飞溅出来，就被高温化作血红色的蒸汽，冲击波在长长的走廊上来来去去，早已没有任何完整的玻璃，连这座建筑物都摇摇欲坠。双方重复地受伤，都是伤及内脏和骨骼的致命伤，但强大的再生能力一直在起作用，修复断裂的肌腱、骨骼和内脏，强迫它们重新聚合，以便再度投入残酷的战斗中去。利爪割裂了墙壁，连同墙壁里面的钢筋，但被持剑者成功地闪避了，持剑者捕捉到短瞬间的进攻机会，铁剑呼啸着撩起，大片的血花溅上了天花板，可...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/03/25</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="龙族">龙族</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/03/22/myfirstblog/">
-            
-                <span>myfirstblog</span>
-        </a>
-        <div class="abstract-content">
-            
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/03/22</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/03/22/hello-world/">
-            
-                <span>Hello World</span>
-        </a>
-        <div class="abstract-content">
-            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new "My New Post"
-More info: Writing
-Run server1$ hexo server
-More...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/03/22</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
     
     <!-- paginator  -->
-    
-</main>
-            <!-- profile -->
+    <ul class="post-paginator">
+        <li class="next">
             
-            <div class="profile">
-    <img class="profile-avatar" alt="avatar" src="/avatar/wjz.jpg">
-    <div class="profile-name">没头脑和不高兴</div>
-    
-    <div class="profile-signature">
-        witness me
-    </div>
-    
-    
-    <div class="profile-social">
-        
-    
-        
+                <div class="nextSlogan">Next Post</div>
+                <a href="/2019/03/28/Matplotlib使用/" title="Matplotlib使用">
+                    <div class="nextTitle">Matplotlib使用</div>
+                </a>
             
-                <a href="mailto:1554148540@qq.com" class="iconfont-archer email" title="email"></a>
+        </li>
+        <li class="previous">
             
-        
-    
-        
+                <div class="prevSlogan">Previous Post</div>
+                <a href="/2019/03/25/longzu5 1-3zhang/" title="龙族5悼亡者的归来 1-3章在线阅读">
+                    <div class="prevTitle">龙族5悼亡者的归来 1-3章在线阅读</div>
+                </a>
             
-                <a href="//github.com/hyywestwood" class="iconfont-archer github" target="_blank" title="github"></a>
-            
-        
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
-        
-            
-                <span class="iconfont-archer wechat" title="wechat">
-                  
-                  <img class="profile-qr" src="/assets/wechatqr.jpg">
-                </span>
-            
-        
     
-        
-            
-                <span class="iconfont-archer qq" title="qq">
-                  
-                  <img class="profile-qr" src="/assets/qqqr.jpg">
-                </span>
-            
-        
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
     
-        
-            
-                <a href="https://space.bilibili.com/12196079" class="iconfont-archer bilibili" target="_blank" title="bilibili"></a>
-            
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
     
 
-    </div>
-    
-    
-        <div class="friends">
-            <div>FRIENDS</div>
-            
-                
-                    <span>
-                        <a href="//www.baidu.com" target="_black">friendA</a>
-                    </span>
-                
-            
-                
-                    <span>
-                        <a href="//www.google.com" target="_black">friendB</a>
-                    </span>
-                
-            
-                
-            
-        </div>
-    
-    
-        <div class="about-me">
-            <a href="/about">ABOUT ME</a>
-        </div>
-    
-</div>
+    <!-- 评论 -->
+</main>
+            <!-- profile -->
             
         </div>
         <footer class="footer footer-unloaded">
@@ -828,6 +549,24 @@ More...
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#git-学习总结及常见命令说明"><span class="toc-number">1.</span> <span class="toc-text">git 学习总结及常见命令说明</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#创建版本库（repository）"><span class="toc-number">1.1.</span> <span class="toc-text">创建版本库（repository）</span></a></li></ol></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -1119,6 +858,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>

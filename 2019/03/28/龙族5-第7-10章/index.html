@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="chinese">
+    <!-- title -->
+
+
+
+
+<!-- keywords -->
+
+
+
+
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="author" content="没头脑和不高兴">
+    <meta name="renderer" content="webkit">
+    <meta name="copyright" content="没头脑和不高兴">
+    
+    <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
+    
+    <meta name="description" content>
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>龙族5-第7-10章 · 没头脑和不高兴的个人博客</title>
+    <style type="text/css">
+    @font-face {
+        font-family: 'Oswald-Regular';
+        src: url("/font/Oswald-Regular.ttf");
+    }
+
+    body {
+        margin: 0;
+    }
+
+    header,
+    footer,
+    .back-top,
+    .sidebar,
+    .container,
+    .site-intro-meta,
+    .toc-wrapper {
+        display: none;
+    }
+
+    .site-intro {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        /* height: 50vh; */
+        overflow: hidden;
+    }
+
+    .site-intro-placeholder {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        width: calc(100% + 300px);
+        height: 100%;
+        background: repeating-linear-gradient(-45deg, #444 0, #444 80px, #333 80px, #333 160px);
+        background-position: center center;
+        transform: translate3d(-226px, 0, 0);
+        animation: gradient-move 2.5s ease-out 0s infinite;
+    }
+
+    @keyframes gradient-move {
+        0% {
+            transform: translate3d(-226px, 0, 0);
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+</style>
+
+    <link rel="preload" href="/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="/css/mobile.css?v=20180824" media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+    <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+/* This file is meant as a standalone workflow for
+- testing support for link[rel=preload]
+- enabling async CSS loading in browsers that do not support rel=preload
+- applying rel preload css once loaded, whether supported or not.
+*/ -->
+<script>
+(function( w ){
+	"use strict";
+	// rel=preload support test
+	if( !w.loadCSS ){
+		w.loadCSS = function(){};
+	}
+	// define on the loadCSS obj
+	var rp = loadCSS.relpreload = {};
+	// rel=preload feature support test
+	// runs once and returns a function for compat purposes
+	rp.support = (function(){
+		var ret;
+		try {
+			ret = w.document.createElement( "link" ).relList.supports( "preload" );
+		} catch (e) {
+			ret = false;
+		}
+		return function(){
+			return ret;
+		};
+	})();
+
+	// if preload isn't supported, get an asynchronous load by using a non-matching media attribute
+	// then change that media back to its intended value on load
+	rp.bindMediaToggle = function( link ){
+		// remember existing media attr for ultimate state, or default to 'all'
+		var finalMedia = link.media || "all";
+
+		function enableStylesheet(){
+			link.media = finalMedia;
+		}
+
+		// bind load handlers to enable media
+		if( link.addEventListener ){
+			link.addEventListener( "load", enableStylesheet );
+		} else if( link.attachEvent ){
+			link.attachEvent( "onload", enableStylesheet );
+		}
+
+		// Set rel and non-applicable media type to start an async request
+		// note: timeout allows this to happen async to let rendering continue in IE
+		setTimeout(function(){
+			link.rel = "stylesheet";
+			link.media = "only x";
+		});
+		// also enable media after 3 seconds,
+		// which will catch very old browsers (android 2.x, old firefox) that don't support onload on link
+		setTimeout( enableStylesheet, 3000 );
+	};
+
+	// loop through link elements in DOM
+	rp.poly = function(){
+		// double check this to prevent external calls from running
+		if( rp.support() ){
+			return;
+		}
+		var links = w.document.getElementsByTagName( "link" );
+		for( var i = 0; i < links.length; i++ ){
+			var link = links[ i ];
+			// qualify links to those with rel=preload and as=style attrs
+			if( link.rel === "preload" && link.getAttribute( "as" ) === "style" && !link.getAttribute( "data-loadcss" ) ){
+				// prevent rerunning on link
+				link.setAttribute( "data-loadcss", true );
+				// bind listeners to toggle media back
+				rp.bindMediaToggle( link );
+			}
+		}
+	};
+
+	// if unsupported, run the polyfill
+	if( !rp.support() ){
+		// run once at least
+		rp.poly();
+
+		// rerun poly on an interval until onload
+		var run = w.setInterval( rp.poly, 500 );
+		if( w.addEventListener ){
+			w.addEventListener( "load", function(){
+				rp.poly();
+				w.clearInterval( run );
+			} );
+		} else if( w.attachEvent ){
+			w.attachEvent( "onload", function(){
+				rp.poly();
+				w.clearInterval( run );
+			} );
+		}
+	}
+
+
+	// commonjs
+	if( typeof exports !== "undefined" ){
+		exports.loadCSS = loadCSS;
+	}
+	else {
+		w.loadCSS = loadCSS;
+	}
+}( typeof global !== "undefined" ? global : this ) );
+</script>
+
+    <link rel="icon" href="/assets/favicon1.ico">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js" as="script">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" as="script">
+    <link rel="preload" href="/scripts/main.js" as="script">
+    <link rel="preload" as="font" href="/font/Oswald-Regular.ttf" crossorigin>
+    <link rel="preload" as="font" href="https://at.alicdn.com/t/font_327081_1dta1rlogw17zaor.woff" crossorigin>
+    
+    <!-- fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" defer></script>
+    <!-- 百度统计  -->
+    
+    <!-- 谷歌统计  -->
+    
+</head>
+
+    
+        <body class="post-body">
+    
+    
+<header class="header">
+
+    <div class="read-progress"></div>
+    <div class="header-sidebar-menu">&#xe775;</div>
+    <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/">不高兴的个人博客</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">龙族5-第7-10章</a>
+            </div>
+    </div>
+    
+    <a class="home-link" href="/">不高兴的个人博客</a>
+</header>
+    <div class="wrapper">
+        <div class="site-intro" style="
+
+
+
+
+
+
+
+height:50vh;
+">
+    
+    <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
+            
+    <div class="site-intro-placeholder"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
+    <div class="site-intro-meta">
+        <!-- 标题  -->
+        <h1 class="intro-title">
+            <!-- 主页  -->
+            
+            龙族5-第7-10章
+            <!-- 404 -->
+            
+        </h1>
+        <!-- 副标题 -->
+        <p class="intro-subtitle">
+            <!-- 主页副标题  -->
+            
+            
+            <!-- 404 -->
+            
+        </p>
+        <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                
+                    <div class="post-intro-read">
+                        <span>字数统计: <span class="post-count word-count">10.4k</span>阅读时长: <span class="post-count reading-time">34 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2019/03/28</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        
+    </div>
+</div>
+        <script>
+ 
+  // get user agent
+  var browser = {
+    versions: function () {
+      var u = window.navigator.userAgent;
+      return {
+        userAgent: u,
+        trident: u.indexOf('Trident') > -1, //IE内核
+        presto: u.indexOf('Presto') > -1, //opera内核
+        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+        iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者安卓QQ浏览器
+        iPad: u.indexOf('iPad') > -1, //是否为iPad
+        webApp: u.indexOf('Safari') == -1, //是否为web应用程序，没有头部与底部
+        weixin: u.indexOf('MicroMessenger') == -1, //是否为微信浏览器
+        uc: u.indexOf('UCBrowser') > -1 //是否为android下的UC浏览器
+      };
+    }()
+  }
+  console.log("userAgent:" + browser.versions.userAgent);
+
+  // callback
+  function fontLoaded() {
+    console.log('font loaded');
+    if (document.getElementsByClassName('site-intro-meta')) {
+      document.getElementsByClassName('intro-title')[0].classList.add('intro-fade-in');
+      document.getElementsByClassName('intro-subtitle')[0].classList.add('intro-fade-in');
+      var postIntros = document.getElementsByClassName('post-intros')[0]
+      if (postIntros) {
+        postIntros.classList.add('post-fade-in');
+      }
+    }
+  }
+
+  // UC不支持跨域，所以直接显示
+  function asyncCb(){
+    if (browser.versions.uc) {
+      console.log("UCBrowser");
+      fontLoaded();
+    } else {
+      WebFont.load({
+        custom: {
+          families: ['Oswald-Regular']
+        },
+        loading: function () {  //所有字体开始加载
+          // console.log('loading');
+        },
+        active: function () {  //所有字体已渲染
+          fontLoaded();
+        },
+        inactive: function () { //字体预加载失败，无效字体或浏览器不支持加载
+          console.log('inactive: timeout');
+          fontLoaded();
+        },
+        timeout: 5000 // Set the timeout to two seconds
+      });
+    }
+  }
+
+  function asyncErr(){
+    console.warn('script load from CDN failed, will load local script')
+  }
+
+  // load webfont-loader async, and add callback function
+  function async(u, cb, err) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (cb) { o.addEventListener('load', function (e) { cb(null, e); }, false); }
+    if (err) { o.addEventListener('error', function (e) { err(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+
+  var asyncLoadWithFallBack = function(arr, success, reject) {
+      var currReject = function(){
+        reject()
+        arr.shift()
+        if(arr.length)
+          async(arr[0], success, currReject)
+        }
+
+      async(arr[0], success, currReject)
+  }
+
+  asyncLoadWithFallBack([
+    "https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js", 
+    "https://cdn.bootcss.com/webfont/1.6.28/webfontloader.js",
+    "/lib/webfontloader.min.js"
+  ], asyncCb, asyncErr)
+</script>        
+        <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
+        <div class="container container-unloaded">
+            <main class="main post-page">
+    <article class="article-entry">
+        <h2 id="龙族五-第7章-全民公敌（6）"><a href="#龙族五-第7章-全民公敌（6）" class="headerlink" title="龙族五 第7章 全民公敌（6）"></a>龙族五 第7章 全民公敌（6）</h2><p><img src="/2019/03/28/龙族5-第7-10章/龙族-1.jpg" alt="龙族-1"></p>
+<p>　“无人机十五秒后会经过你的上空，我会最后一次给你们空投装备。”EVA说，“我能想到的东西都放进去了。”</p>
+<p>　　诺诺走出火锅店，仰头就看到了夜空下那刺眼的亮光，无人机低空飞掠火锅店所在的街道。</p>
+<p>　　它的下方，一朵黑色的伞花张开，降落伞带着沉重的铝制手提箱，准确地落在距离诺诺不到十米的地方。</p>
+<p>　　无人机空投之后直接远去，带着陡峭的弧线扎入上方的黑云中。</p>
+<p>　　诺诺打开装备箱，快速地检查，学院的装备箱有很多的规格，应对不同的任务，而这个装备箱是诺诺见过的最完备的，堪称无所不包。</p>
+<p>　　武器，从短小精致的手枪到方便好用的掷刀，还有塑料弹壳的弗里嘉子弹，能够通过机场的安全检查；大约十个不同国家的护照，护照上贴着诺诺和路明非的照片，名字却各不相同；几个不同国家的现金，全球通用但无法追踪的信用卡；用于伪装的假皮肤、药水和假发套……</p>
+<p>　　诺诺翻到装备箱的最后一层，这里空荡荡的，只有一部手机，端端正正地嵌在箱底正中间的格子里，这在装备箱里绝对是个VIP的位置。</p>
+<p>　　第一代的iphone手机，这东西简直能算一个古董了。</p>
+<p>　　“你在里面放了一台手机？”诺诺翻看那部手机，“你刚刚说过我们不能用手机，你能监视世界上任何一个角落的通话。”</p>
+<p>　　“这是一部不能打电话的手机，它不具备介入任何通信网络的功能，但我在它的存储器里植入了我的核心数据。”</p>
+<p>　　“你的核心数据？”</p>
+<p>　　“它能够运行我的逻辑库，因此有着和我一样的思维方式。这个逻辑库中有几条核心命令是保护路明非的，因为无法联网更新，这些命令无法被改写。在你们的逃亡路上，它会帮助你们。”</p>
+<p>　　“就是说我们得遵循这家伙的指引逃亡？”</p>
+<p>　　“是的，逃亡方案我已经存储在它的数据库里了。”</p>
+<p>　　“也就是说这个手机里存有另一个你。”</p>
+<p>　　“是的，一个会继续帮助路明非的我，”EVA顿了顿，“但假设我的底层命令被修改，我会全力以赴地追捕你们，我不确定这个小家伙一定能战胜我的本体。毕竟我能够调用全世界范围内的任何处理器为我工作，而这个小家伙能用的也就是一台智能手机的计算量而已。”</p>
+<p>　　“你们人工智能真有趣，还能干出这种自己打自己的事情来。”诺诺收起那台手机，“我们还有几分钟的朋友可做？我的意思是，我们什么时候开始当敌人？”</p>
+<p>　　“他们正在来的路上，修改底层命令需要一点时间，大约十五分钟后我们就变成敌人了，最好从现在起不要相信任何人，包括我在内。”</p>
+<p>　　诺诺看了一眼腕表，仰望着飘雨的夜空。</p>
+<p>　　真有趣，还有十五分钟你就要被全世界抛弃，而提醒你的家伙可能是你未来最恐怖的敌人。</p>
+<p>　　“我一直以为我的人生会是一部怪兽片，可现在看来要变成一部公路片了。”诺诺自嘲地笑笑。</p>
+<p>　　“其实每个人的人生都是一部公路片，别在乎跑去哪里，关键是一直在跑。”EVA说，“反正最后的目的地一定是座墓碑。”</p>
+<p>　　“作为一个人工智能，你那么毒舌真的好么？”</p>
+<p>　　“这句话其实是你自己说的，”EVA说，“你在伊斯坦布尔，对恺撒说了这句话，我录了下来，现在回赠给你。”</p>
+<p>　　诺诺沉默了片刻，“恺撒还好么？我跟他的婚约还有效么？还是说作为新任校董，他会是来拦截我的先头部队？”</p>
+<p>　　“校董会建议他为了避嫌暂时搁置跟你的婚约，但加图索先生拒绝了，这点上你应该对你的未婚夫有信心，不过他也可能是拦截你的先头部队，这两点对他来说不构成冲突。”</p>
+<p>　　“了解了。”</p>
+<p>　　“最后一个问题，纯属好奇，我监控了你离开邵一峰家之后的行动路线。24小时内你高效地完成了很多事，但到达那间火锅店，在距离路明非只剩下不到两公里的地方，你忽然停下了，浪费非常宝贵的两小时时间吃了一顿火锅。”EVA说，“我想知道出于什么样的原因你停下了。”</p>
+<p>　　“你以为呢？”诺诺反问。</p>
+<p>　　“不想面对现实么？回到邵一峰那里你就要面对路明非，当这个怪物的朋友或者敌人，这是一个艰难的选择。”</p>
+<p>　　“你想得太多了，”诺诺淡淡地说，“一旦回到邵一峰的家里，我就要带着路明非逃亡了，那之后很长时间我可能都休息不上了，更别说悠闲地吃一顿火锅。而这时候我面前出现了一家24小时营业的火锅店，就那么简单。”</p>
+<p>　　“所以从一开始这就不是一个选择题对么？你从未想过要把路明非交还给学院。”</p>
+<p>　　“没想过，我早不是卡塞尔学院的人了，我是他妈的金色鸢尾花淑媛学院的人。”诺诺骂了句脏话，但语气平静吐字清晰，真像是一位名门淑媛再做自我介绍。</p>
+<p>　　“真不愧是红发巫女，祝你们一路好运。”EVA的话里带着浅浅的笑意，“再见，哦对了，别开你那部车离开，那部车上有卫星定位系统，我就是通过它一直盯着你的。”</p>
+<p>　　通话中断，诺诺站在萧瑟的风雨中，静静地看着那部手机，这好像是她和世界的最后一次对话。</p>
+<p>　　“辉子火锅”的店员站在屋檐下，看着诺诺远去的背影。</p>
+<p>　　这个一头红发的女孩开着一辆红得耀眼的法拉利来吃火锅，离开的时候却是步行，她甚至把车钥匙留在了沸腾的火锅边，好像那就是一台无所谓的共享单车。</p>
+<p>　　她就这么走了，拎着一个沉重的旅行箱，腰肢袅娜，却又步伐坚定，高跟靴子踏在积水的地面上，溅起晶莹的水花，像是一个经过这座小城的异乡人，又像是路过尘世间的精灵。</p>
+<p>　　电梯缓缓地下降，恺撒和阿巴斯看着那代表楼层数的、越来越大的负数，都在惊讶学院还有那么深的地下空间。</p>
+<p>　　电梯看起来非常老旧，让人怀疑有几十年无人维护了，入口就在校长办公室的地下室里。</p>
+<p>　　“这让我想到一部日本的老电影。”阿巴斯说。</p>
+<p>　　“《蜘蛛巢城》。”恺撒说。</p>
+<p>　　阿巴斯点点头。</p>
+<p>　　英灵殿里的电梯往下会到达冰窖，图书馆的电梯往下会到达EVA的机房，这部电梯又会带他们去哪里？这间学院的地下空间岂不正像一个巨大的蜘蛛巢，让人不由得猜测蜘蛛巢的深处藏着什么样的怪物。</p>
+<p>　　“建造这间学院的时候他们先是把整个山的下面都挖空了，把秘党在欧洲积攒了几千年的家当都搬来了，不过我要带你们去的地方，连绝大多数元老都不知道。”芬格尔说，“我管它叫集线器。”</p>
+<p>　　“集线器？”恺撒问。</p>
+<p>　　“一种电子设备，所有的线路都在那里被收纳和整理，”芬格尔看了恺撒一眼，“就像生物的神经中枢。”</p>
+<p>　　电梯停下，电梯门打开，恺撒和阿巴斯惊讶地看着眼前巨大而杂乱的空间。</p>
+<p>　　这真就是个巨型的集线器，巨大的空间里，各种颜色、数以百万级的电线相互缠绕着去往不同的方向，四壁全都是体积巨大的老式计算机，堪称古老的晶体管在黑暗中闪着微光，磁带式的存储器转动着，发出咔哒咔哒的微声。</p>
+<p>　　“这是一间机房。”阿巴斯轻声说，“或者一个计算机博物馆。”</p>
+<p>　　“最早的通用计算机是1946年在宾夕法尼亚大学建成的，人们叫它ENIAC，当时秘党就意识到那是个能改变世界的好东西，于是他们在这里原样复制了ENIAC，改名为EVA。”芬格尔说，“就是你们现在看到的这东西。”</p>
+<p>　　“所以EVA在1946年就诞生了。”恺撒仰望那些巨大的机柜。</p>
+<p>　　“之后的几十年里他们一直在用更新的技术强化她，直到把她变成了能够监控全世界的超级网络，她本身的处理器也越来越庞大，被放在图书馆地下的空间里，但底层的命令库却依然只能在这里被书写和修改。”芬格尔揭开防尘罩，激起大片的灰尘，“我们可以把图书馆下面的那些处理器看作EVA的神经元，而这里是她的脑干部分。”</p>
+<p>　　防尘罩下是一个老旧的控制台，显示器还是上世纪80年代的单色屏幕。</p>
+<p>　　芬格尔接通电源，熟练地操作起来，绿色的代码飞快地刷过，最后停顿住。</p>
+<p>　　“拉丁文写的核心命令库？”阿巴斯说。</p>
+<p>　　“是的，这个系统是单独为她研发，语言也是单独为她创造的，基于拉丁文，这个核心命令库的意思是……”</p>
+<p>　　<strong><strong><strong><strong><strong><strong>*</strong></strong></strong></strong></strong></strong></p>
+<p>　　坑边闲话：</p>
+<p>　　我一直不太确定我该给这个章节后的小随笔起个什么名字，直到我正在坐在电脑前开始敲击键盘，《坑边闲话》这个名字瞬间就跳入我的脑海。联想到的是陈圆圆老师的《舞余词》，没错，就是那个很漂亮又很有名的陈圆圆老师，她曾经留下过这么一部词集，其书已经亡佚。</p>
+<p>　　究其起名的逻辑，大概意思是她的本业其实是跳舞，跳舞之余写几首小词自娱，既是自谦的意思，表示拙作不便和大家拿来比较，毕竟只是闲时偶得，也是表明自己尚有跳舞这个更加出名的正当职业。</p>
+<p>　　而我的正当职业是挖坑。</p>
+<p>　　就这么愉快地决定了吧。</p>
+<h2 id="龙族v-第8章-全民公敌（7）"><a href="#龙族v-第8章-全民公敌（7）" class="headerlink" title="龙族v 第8章 全民公敌（7）"></a>龙族v 第8章 全民公敌（7）</h2><p><img src="/2019/03/28/龙族5-第7-10章/龙族-2.jpg" alt="龙族-2"></p>
+<p>“不用，我能读拉丁文。”恺撒阻止了芬格尔，逐字逐句地翻译了这个简短的命令库，“第一条，保护路明非的生命安全；第二条，抹除所有可能威胁路明非生命安全的目标，若无其他保护路明非的方法；第三条，一切命令若与前两条冲突，则无效。”</p>
+<p>　　“甚至包含了杀人的命令。”阿巴斯轻声说。</p>
+<p>　　第二条确实是个杀人命令，如果EVA的判断是她除了杀人就不能保证路明非的生命安全，那么她被授权杀人。“抹除”是个听起来很中性的词，但用在有生命的目标身上，就是抹杀。</p>
+<p>　　“根据第三条，她不会执行元老会的命令去全球搜索路明非，我们应该庆幸元老会还没有机会置路明非于死地，”芬格尔耸耸肩，“否则她有可能会判断元老会应该被抹除。”</p>
+<p>　　“我们该怎么办？”恺撒问，“如果不能攻克EVA的核心命令库，那么我们等于跟敌人身处一个战壕。”</p>
+<p>　　“不需要攻克，从外部你根本无法攻克EVA的防火墙，但是在这里，修改这个核心命令库就只要打打字就好了。”芬格尔敲下回车键。</p>
+<p>　　屏幕上出现了闪烁的光标，恺撒和阿巴斯都愣住了，这个光标意味着这个残酷的、不留余地的核心命令库可以像一个Word文件那样被修改。</p>
+<p>　　这种感觉就像神想要修改世界的规则，就只要口述就行了，简单地说“从此世界上再没有万有引力”，于是一瞬间太阳系就崩溃，太阳和无数大小行星卫星不再相互围绕旋转，而是孤单地悬浮在宇宙里。</p>
+<p>　　芬格尔开始按退格键，一个字节一个字节地删除那些命令行，他的神情高傲，动作潇洒，有如一位皇帝在宣战的诏书上签字。</p>
+<p>　　“这就行了！所有袒护路明非的命令都被删除，从这一刻起EVA就为我们工作了！”</p>
+<p>　　蓝色的光柱从上方照下，半透明的女孩以全息投影的方式出现。</p>
+<p>　　“命令修改通过，路明非，学籍号AI071721，从受保护名单中删除，转为红色高危目标，疑似初代或次代纯血龙类，危险程度未知，可导致城市毁灭级别的灾难。通缉令已经下发。”EVA面无表情地说。</p>
+<p>　　巨大的投影屏幕在EVA的背后张开，屏幕上弹出无数的窗口，曾经被EVA刻意遮蔽的信息全都涌现在恺撒和阿巴斯的面前，有路明非坐船进入马耳他时的照片，有路明非和芬格尔在小巷口放哨诺诺在小巷深处换衣服的照片，甚至还有路明非扶着叔叔在福园酒楼的楼顶上呕吐的视频，这是一架当时恰好从旁边经过的家用无人机拍下的。在路明非自以为行踪很隐秘的时候，遍布各处的摄像头录下了他的一举一动，然后通过卫星传输数据，集中到EVA的数据库中。</p>
+<p>　　恺撒不由自主地仰望天空。</p>
+<p>　　虽然身在室内，但是他仿佛能感觉到一双巨大的、由电子流组成的眼睛在外太空张开了，静静地凝视着地球。</p>
+<p>　　那就是EVA的天眼，无声地观察着世界的每个角落，看着人类的喜怒哀乐和鬼蜮伎俩，没有她不知道的秘密，也没有她不了解的人性，她只是有时故意沉默。</p>
+<p>　　“所以在我们满世界找你们的时候，你们却从马耳他出发，坐着头等舱，堂而皇之地飞去了中国，就住在路明非叔叔的家里，还跟他的高中同学聚会，还以成功校友的名义在他的中学发表了演讲？”阿巴斯叹气，“一条底层命令就把整个学院都变成了瞎子。”</p>
+<p>　　“可不是么！”芬格尔叹气，“还不是因为校长偏袒他！我也是身不由己，否则我早就把那孙子抓回学院里来了，给他加上几万伏特的高压电，狠狠电上那么几轮，我就不信他不招供！”</p>
+<p>　　“可我们还是不知道他们此刻的位置。”恺撒快速地操作触摸屏，阅读EVA给出的情报。</p>
+<p>　　“在我跟陈墨瞳的最后通话中，我指示她驾车逃离，最好是通过边境口岸离开中国，那样可以避开我的追踪。”</p>
+<p>　　“所以在我们到达这里前你还跟陈墨瞳通过话？”阿巴斯问。</p>
+<p>　　“当你们接近那部电梯的时候，我的逻辑分析告诉我你们的来意是要修改我的底层数据库，那时候保护路明非这条命令对我仍旧是有效的，我做出的应对策略是告诉诺诺，他们应该开始逃亡了。”</p>
+<p>　　“你跟陈墨瞳说了些什么？”</p>
+<p>　　“你可以查阅我们的对话记录。”EVA说话的同时，对话记录已经在投影屏幕上展开。</p>
+<p>　　阿巴斯读完了通话记录，点了点头，“所以诺诺已经知道你变成了他们的敌人。”</p>
+<p>　　“以她的聪明，如果我再度联系她，她是不会相信我说的话的，所以不要希望能借我的名义引出他们。”</p>
+<p>　　“你给他们送去的那台手机里，存储着你为他们设计的逃亡路线？你指引他们逃往哪里？”</p>
+<p>　　“我不知道，那是我很久以前就设计好的一条逃亡路线，当路明非成为学院的对立面时，他可以使用。设计完成之后，我就把关于那条路线的数据从我的数据库中永久删除了。”</p>
+<p>　　“一台机器，为了对抗自己的追捕而设计的路线，是这样么？”</p>
+<p>　　“是的，一条连我都很难追踪的路线，他们还有一份我的拷贝在手，这会增加他们的成功率。这个世界上，在人工智能领域，只有我有资格作为自己的敌人。”</p>
+<p>　　“根据原本的第二条核心命令，我们是会危及到路明非生命安全的人，你是否也曾考虑抹除我们？”</p>
+<p>　　“考虑过，但很遗憾的是，在校长办公室内部，我没有办法抹除任何人。这间办公室本来就是我的后门，你们踏进办公室的那一刻开始，我已经无法杀死你们了。”</p>
+<p>　　“无论作为敌人还是伙伴你都值得我尊敬。”阿巴斯轻轻地叹了口气。</p>
+<p>　　“你们现在知道了吧？”芬格尔摇头晃脑，“我对学院是赤胆忠心的！别看我一直表现得像是路明非的老铁，私下里学院的事儿我时刻都放在心上！两位大哥的事儿我也都记着呢！比如这狗贼对老大你的未婚妻那是色心不死啊！要不是有我在，这孤男寡女的，深更半夜不知道敲了多少次门？可我就是一枚锃亮的电灯泡啊！我就是要在他俩之间发亮！我用人格跟你保证，这俩绝对没啥苟且！”</p>
+<p>　　恺撒没有理他，认真地盯着屏幕。</p>
+<p>　　芬格尔又转向阿巴斯，难得他也有点语塞了，委实说这一路上他都没想着阿巴斯，他跟阿巴斯没有跟恺撒那么熟，狮心会的前任会长喜欢静坐冥想，</p>
+<p>　　“为了和阿巴斯你保持审美和世界观上的认同感，我有空的时候就研读《古兰经》，虽说吧以我的觉悟能理解得有限，但我内心里还是一个很想亲近神、很要强的年轻人。”</p>
+<p>　　阿巴斯苦笑着摸了摸下颌的短须，</p>
+<p>　　阿巴斯拍了拍芬格尔的肩膀，“别再读任何经文了，宗教信仰这事儿不合适你。”</p>
+<p>　　“怎么就不合适我呢？”芬格尔满脸不解，“我也想寻求真理啊！”</p>
+<p>　　“你是个连神都可以出卖的人啊。”阿巴斯微笑。</p>
+<p>　　邵公子醒来的时候，窗外的天已经亮起来了，他那亭亭玉立的女秘书正站在他的面前。</p>
+<p>　　“你你你……你怎么在这里？谁允许你进我卧室的？”邵公子又急又气。</p>
+<p>　　诺诺走的时候叮嘱他照顾好路明非，片刻不要离开，他就给秘书发了微信说今天不去上班了，有任何人找他都给他挡掉，然后跟一尊神似的坐在床边的沙发上，开了一瓶82年的拉菲，边喝边执行任务。</p>
+<p>　　没想到酒劲儿上来，不知什么时候睡过去了。</p>
+<p>　　<strong><strong><strong><strong><strong><strong>*</strong></strong></strong></strong></strong></strong></p>
+<p>　　坑边随笔：</p>
+<p>　　看到读者有人问这本《龙族》是不是我写的，风格感觉跟前几本不同。天地良心每个字都是我写的，至于风格不同，看过我三部以上作品的读者应该会知道我可以写出完全不同风格的东西。最早写作的时候我的成名作是校园风格的《此间的少年》，后来我改写了架空史诗风格的《九州缥缈录》，然而我又写了这部《龙族》，中间我还写过科幻风格的《上海堡垒》。</p>
+<p>　　我想我应该是属变色龙的吧。</p>
+<h2 id="龙族v-第9章-全民公敌（8）"><a href="#龙族v-第9章-全民公敌（8）" class="headerlink" title="龙族v 第9章 全民公敌（8）"></a>龙族v 第9章 全民公敌（8）</h2><p><img src="/2019/03/28/龙族5-第7-10章/龙族-3.jpg" alt="龙族-3"></p>
+<p>这个秘书是邵一峰非常信得过的人，可是让秘书看见床上包扎得跟粽子似的路明非，漏了口风怎么办？这个在精神病院认识的哥们想必是师姐的拍档，要是警察找上门来把他给抓了，没准会牵连到师姐！</p>
+<p>　　拍出一叠现金在秘书脸上让她保守秘密？恶狠狠地把秘书推倒在床上……这秘书虽说也颇貌美但邵一峰对身边的工作人员倒还不至于抱有什么邪念，他是考虑要捆上她把她塞到储藏室里去，不能让她出去胡说八道。</p>
+<p>　　一瞬间邵一峰的脑子里转过无数的念头，直到秘书递来一张卡片，“邵总，您师姐已经走了。她让我等您醒来的时候把这个交给您。”</p>
+<p>　　邵一峰这才注意到旁边的床上已经空了，埃及长绒棉的床单上连折痕都看不到，好像过去的24个小时只是他的一场梦，梦里他为师姐施展浑身解数就差变出三头六臂了，而且激动万分，觉得自己偷窥到了一个秘密的世界，在那个世界里师姐出生入死拯救世界。</p>
+<p>　　现在那个梦结束了，他坐在自己卧室的沙发上，这个细雨蒙蒙的早晨就像以往的早晨一样平平淡淡，甚至没有一个酥胸粉腿的女孩睡在他旁边。</p>
+<p>　　师姐和神经病院的那哥们都走了，他现在很安全了，不用担惊受怕了，可不知道为什么，邵一峰觉得有些失落。</p>
+<p>　　邵一峰接过那张卡片，卡片上是一封信。</p>
+<p>　　“小峰：</p>
+<p>　　我们在这边的事已经结束了，该走了。</p>
+<p>　　谢谢你帮忙，以前可能有欺负你，对不起。</p>
+<p>　　好好的。</p>
+<p>　　陈墨瞳”</p>
+<p>　　那歪歪斜斜的字迹肯定是诺诺无误，她在中国生活的时间并不多，很少写中文，字体就是这样的蹩脚。语气也是她惯常的语气，透着无所谓。</p>
+<p>　　这样短短的一封信，邵一峰却读了很久很久。信从他的手中滑落，邵一峰呆呆地看着窗外的细雨。</p>
+<p>　　“邵总您怎么了？”秘书看邵一峰神不守舍的样子，不由得担心。</p>
+<p>　　“我忽然有种感觉，师姐不会再回来看我了。”邵一峰低声说。</p>
+<p>　　“邵总您想多了，陈师姐以前也是这么忽然就来忽然就走啊，这次还特地给您留了信呢。”秘书赶紧宽慰他。</p>
+<p>　　“她从没跟我说过对不起，还叫我好好的。”邵一峰的语气像个小孩子，“她从没对我那么好过。”</p>
+<p>　　秘书愣住了，她没想到邵一峰居然也会有这么敏感的时候。</p>
+<p>　　可能世界上的每个人都是敏感的，只看你是否真的在乎那个人那件事。</p>
+<p>　　“邵总您别想太多……”秘书斟酌词句，想要安慰老板。</p>
+<p>　　“师姐什么时候走的？”邵一峰腾地站起身来，“她是哪个航班？快叫司机送我去机场，我还来得及送送她！”</p>
+<p>　　“您师姐是开车走的，她问我能不能借一辆适合越野还查不出来历的车，您上个月不是从德国买了台还没上牌的走私车么？我想师姐要借车您肯定不会不同意，就自作主张把那台车的钥匙给她了。”</p>
+<p>　　“你把我的车借给师姐了？”邵公子直愣愣地看着秘书。</p>
+<p>　　秘书被他看得心里直发毛，不明白老板这是怎么了，会为她借给诺诺一部车来逼问她。她借给诺诺的那部车虽然价格不菲，但跟邵一峰以前出借的法拉利和兰博基尼还不是一个价位，难道说那台车有什么特别之处，是唯一限量版什么的，邵一峰甚至不舍得借给诺诺？</p>
+<p>　　可下一刻邵一峰就恢复了精气神，激动得摩拳擦掌，“借得好借得好！师姐那么靠得住的人，怎么会借了我的车不还呢？就算她把我的车撞成废铁了都会给我运回来的。”</p>
+<p>　　邵一峰高兴地在卧室里转圈子，“我就怕她跟我客气，她要肯跟我借车，那就是没跟我见外。”</p>
+<p>　　秘书呆呆地看着这位公子，无言以对。</p>
+<p>　　“邵总，今天去公司么？”秘书问，“您今天还真有一个重要的会，取消了怕不好。”</p>
+<p>　　“上班上班，我这游手好闲的，师姐也看不上我对不对？”邵一峰奔向衣柜，拿出几根颜色不同的领带在自己领子上比划，忽然想起了什么，“诶对了，上次来我办公室那个屠小姐……屠什么来着？”</p>
+<p>　　“屠小姣。”秘书提醒。</p>
+<p>　　“对对，那个很那个什么的女演员。”邵公子在自己胸口比划两下，明确无误地表示屠小姣叫什么名字并不重要，在他记忆里就是个胸很大的妞，“怎么也不跟我打个招呼就走了？给她经纪人打个电话，今晚叫出来陪我喝几杯。”</p>
+<p>　　邵一峰系上领带，看了一眼目瞪口呆的秘书，忽然龇牙，尴尬地笑笑，“这不师姐不在么？可别在师姐面前给我多嘴！”</p>
+<p>　　邵公子兴冲冲地出门去了，秘书拿起被他忘在床头的那张卡片看了一眼，轻轻地叹了口气。</p>
+<p>　　她没敢说，其实她觉得诺诺不会来找邵一峰还车了，因为诺诺问她借那部走私车的时候，并没有归还之前借走的法拉利。</p>
+<p>　　诺诺向邵一峰道了歉，为她从幼儿园开始对他的欺负，现在她说了对不起，还清了欠账，就此作别。</p>
+<p>　　清晨，整座城市笼罩在细雨中。</p>
+<p>　　道路湿滑，人车拥挤，早餐铺子前白汽蒸腾，上班族冲进来匆匆吃一碗热汤面或者带上几个包子就走，冲上即将关门的公共汽车，公共汽车摇摇晃晃地起步，司机使劲地摁着喇叭。</p>
+<p>　　这是一个老城区的十字路口，附近都是老旧的小区，跟时尚的CBD区不同，透着上个世纪的感觉，喧闹嘈杂。</p>
+<p>　　“张局长是你们班混得最好的，你跟他见面的时候多说说我们家鸣泽，鸣泽回国可以考他们局的公务员，让张局长照顾照顾。”早餐铺子里，中年妇女跟埋头吃锅贴饺子的男人唠叨。</p>
+<p>　　“知道知道，我们家鸣泽考他们局的公务员是给他面子，”男人抹了抹自己的分头，“现在都讲究要有国际视野，我们家鸣泽，美国上的大学，绝对的精英！”</p>
+<p>　　“行了行了，就知道吹你儿子，反正你多跟张局长套套近乎，张局长家那个丫头听说也在新加坡上学，跟我们儿子还挺配的。”</p>
+<p>　　“我有数我有数，不吃了，我要迟到了。”男人起身抹抹嘴。</p>
+<p>　　“真浪费，茶叶蛋就咬一口。”女人从口袋里摸出一个塑料袋，把男人咬过一口的茶叶蛋丢了进去。</p>
+<p>　　男人已经起身走出了早餐铺子。</p>
+<p>　　路边停着一辆白色的宝马三系轿车，男人遥控开门，偏腿上车，神情颇为骄傲。女人打着伞过来给他挡雨。</p>
+<p>　　他一直都是这么骄傲的，在这种老小区，像他这样开宝马车的男人不多，虽说只是一辆最低配，可跟那些丰田本田还是有着身份上的差别。</p>
+<p>　　他又从车窗里探出头来，盯着路边停着的一辆白色房车看，神情羡慕。</p>
+<p>　　这种房车在这种小城市难得看见，卡车般的车头，宽大带窗的车身，宽大的轮胎足以应付各种路面，车头上的牌子基本没什么人认识，绝对的进口货。</p>
+<p>　　要不是这辆车停在路边，占了整整一条车道，早晨的交通状况还能好点。</p>
+<p>　　“快走快走，这车有什么好看的？迟到扣你工资！”中年妇女说。</p>
+<p>　　“你懂什么？那叫房车！车后面拖的那是一个小房子，我们有个客户买了一辆，我看过，里面可豪华了，有浴室有卫生间，卫生间墙面上还贴着大理石。”中年男人说，“有钱人开这种车出去旅行，都不用住酒店的。”</p>
+<p>　　“行了行了，等鸣泽将来赚钱了让他给你买一辆，你开着四处去旅游，享享儿子的福。”中年妇女不由分说地给他关上门。</p>
+<p>　　小宝马汇入了滚滚的车流，女人在车后面挥手告别，一手带着伞，一手拎着一颗茶叶蛋。</p>
+<p>　　白色房车里，诺诺趴在巨大的方向盘上，看了路明非一眼，“看够了么？”</p>
+<p>　　路明非沉默了很久，笑笑，“没什么够不够的，只是跟他们告个别。”</p>
+<p>　　“难道不该下车去亲口跟他们说？你还可以继续编些理由，说学院紧急召你回去做毕业论文什么的，说春节时候再回来看他们。”</p>
+<p>　　“骗人的话，说得太多了，多到自己都不想说了。”</p>
+<p>　　诺诺点点头，发动引擎，房车缓缓地起步，加速，驶入风雨中。</p>
+<p>　　<strong><strong><strong><strong><strong><strong>*</strong></strong></strong></strong></strong></strong></p>
+<p>　　坑边随笔：</p>
+<p>　　写这段的时候我想到的是我家楼下的早餐铺子，不是北京的家，而是安徽合肥的家。我在北京的家位于一个颇为繁华的区域，上下左右颇住着几位男女明星，出门可以看到摩天的购物中心和林立的写字楼，它们的玻璃幕墙反射刺眼的光，但却找不到一间小馆子可以喝一碗豆腐脑。</p>
+<p>　　我每次做梦梦见吃早餐总是在合肥那个家楼下的小破店里，蒸包子的水汽蒸腾，人声鼎沸，外面下着小雨。</p>
+<p>　　恰如我半梦半醒的时候会以为我还睡在多年前动物园旁边的那张小床上，窗下的书桌上摊开我的作业本。</p>
+<h2 id="龙族5-第10章-全民公敌（9）"><a href="#龙族5-第10章-全民公敌（9）" class="headerlink" title="龙族5 第10章 全民公敌（9）"></a>龙族5 第10章 全民公敌（9）</h2><p>　“没什么想问我的么？”十个小时之后，路明非终于打破了沉默。</p>
+<p>　　房车已经在高速公路上连续不断地跑了差不多十个小时，诺诺全程一句话也没说过。</p>
+<p>　　一路上都在下大雨，高速公路上的车不多，也都行驶得很谨慎，只有他们这辆宽大的房车全程高速行驶，超车过弯，溅起一人多高的水墙。</p>
+<p>　　看得出诺诺很着急，但情绪并未流露在脸上，她牢牢地控制着这辆动力澎湃的机器，也不要求跟路明非换班，像是根本不会疲倦。</p>
+<p>　　饿了她就叼着一个巧克力馅儿的牛角包继续开车，路明非偷看她的侧影，她重又变得那么威风凛凛，像是用最坚硬的白色大理石雕刻的女武神，除了那个牛角包有点可爱。</p>
+<p>　　“什么问题？”诺诺瞥了路明非一眼，“如果是无关紧要的问题，就别问了。保存体力，会有需要你替换我的时候。”</p>
+<p>　　“比如，我到底是谁之类的，”路明非顿了顿，“或者我到底是什么东西。”</p>
+<p>　　从醒来到现在，诺诺跟他唯一的一起聊天就是目送叔叔婶婶背影的时候，其他的话都是命令的口气，例如“跟着我”，或者，“离开这里，现在。”</p>
+<p>　　她一句话都没有追问那间医院里发生的事，好像那个恐怖的夜晚根本不存在，她看过路明非隐藏最深的那个秘密后，又都忘光了。</p>
+<p>　　“我猜你自己也不知道，所以不必浪费时间提问。”诺诺淡淡地说，“但是这个世界上总有人知道得比你我更多，等我们找到那个人，一切就清楚了，现在不必讨论。”</p>
+<p>　　“有人知道得比我们更多？”</p>
+<p>　　“EVA的底层命令库中，有几条命令是专门用来保护你的，在你的生命安全受到威胁的情况下，她甚至可以自动获得授权去毁灭能威胁到你的人。”诺诺扭头看了路明非一眼，“你不是什么无关紧要的人，你是学院的重要资产，学院倾注了大量资源来培养你，让你成为他们的武器。只不过武器本身对此一无所知。”</p>
+<p>　　“重要资产？”路明非琢磨了一下这个词儿，无声地笑笑。</p>
+<p>　　那么长的时间里都觉得自己是个废物，死了还是活着都没有人关心甚至没有人知道，结果居然是某些人眼里的重要资产。</p>
+<p>　　一切忽然都豁然开朗起来，为什么自己一个菜鸟，却从一年级开始就总被派去屠龙的第一线，为什么自己能在那个精英云集的学院里活了下来，甚至爬上了学生会主席的高位。这根本就是一个怪物养成计划啊，养育一只大怪物，去吃掉其他小怪物。</p>
+<p>　　最后呢？最后应该是趁那个大怪物还没有明白过来的时候给它灌下毒药，从此一切的威胁都解除，人类亲密友爱地在一起，怪物们的尸骸被埋葬在大地的深处。</p>
+<p>　　“但那几条命令现在已经被撤销了，所以EVA没法保护你了。”诺诺又说，“全球缉捕我们的命令随时都会下达，他们不会放任一台人形屠龙机器在外面乱跑。”</p>
+<p>　　路明非沉默了好一会儿，“师姐你不害怕我么？”</p>
+<p>　　“害怕你？”诺诺瞥了他一眼。</p>
+<p>　　“能跟奥丁对抗的怪物，大概是龙王或者类似的什么东西吧？”</p>
+<p>　　“你觉得自己是么？”</p>
+<p>　　“我不知道，也许什么时候我忽然就丧心病狂了，只想毁灭世界。”</p>
+<p>　　“那时候我再杀掉你，现在不想这个。”诺诺从驾驶台上抓起一把钥匙丢给路明非，“与其跟我聊这些有的没的，不如去车后厢里看看，有件东西你应该有兴趣。”</p>
+<p>　　路明非茫然地拿着钥匙往车后厢里去了，登上这辆豪华房车到现在，他和诺诺都在驾驶室里待着，还没有见识过这车的豪华卧室。</p>
+<p>　　走了两步他才反应过来，诺诺根本就是懒得跟他聊这事儿，丢一串钥匙都把他给打发走了，而他习惯性地就服从了。</p>
+<p>　　你说咋还是那么不争气呢？分明老子是那种吼一吼世界都要抖三抖的大怪物啊！</p>
+<p>　　如果世界上真有命格这东西，自己的命格一定是个黑体加粗的“怂”字吧？</p>
+<p>　　“靠近的时候一定要小心，那东西不安全。”诺诺补充了一句，打开了车前灯，黑沉沉的夜幕已经降临。</p>
+<p>　　路明非愣了一下，点了点头，用钥匙打开通往车后厢的门。</p>
+<p>　　诺诺从后视镜里看着他的背影消失在没开灯的卧室里，轻轻地呼出一口气，好像是那口气一直支撑着她到现在，呼出去之后，巨大的疲惫笼罩了她。</p>
+<p>　　不是因为这趟艰难的逃亡，而是因为路明非。</p>
+<p>　　她当然有很多问题想问路明非，他们现在身处巨大的危险中，没人知道他们走的是不是一条断头路。</p>
+<p>　　他们还身处巨大的谜团之中，从路明非的身份到昂热的遇刺，还有那位神秘的古神奥丁，如果谜团能够解开，他们就会多一些活下去的希望。</p>
+<p>　　可她不愿意和路明非聊这些，因为聊下去就必然会聊到三峡水库的事，还有北京地铁里的事，还有很多很多的事。</p>
+<p>　　不要跟我讲你的心事，因为我不能听。</p>
+<p>　　***</p>
+<p>　　“所以路明非是一件武器？”贝奥武夫问。</p>
+<p>　　英灵殿的会议室里，秘党元老们聚齐。</p>
+<p>　　他们都看完了芬格尔皮带扣里的资料，他们都很想保持平静，但眼角止不住的跳动出卖了他们的内心。</p>
+<p>　　“一件武器，一件能够对付龙王级目标的究极武器！”芬格尔非常笃定，“而我，就是受命监视那件武器的人！我跟那个怪物可不是一路人，我也是糊里糊涂就上了贼船。”</p>
+<p>　　“你的意思是校长希尔伯特·让·昂热让你去执行监视任务。”</p>
+<p>　　“对！都是校长的意思！他不让我毕业，就是为了盯住路明非！”芬格尔显得痛心疾首，“可我根本没想过路明非是那么危险的东西！早知道我就趁他喝醉了手起刀落！”</p>
+<p>　　“执行部里有很多精英，如果需要他们可以是世界顶级的间谍，为什么昂热却锁定你去执行这个任务？”图灵先生问。</p>
+<p>　　“校长说路明非其实特别敏感，负责监视他的人不能是特别强的人，会激活他血统中暴虐的一面。校长觉得我特别适合，因为我是个真正的废物！”芬格尔挺胸收腹。</p>
+<p>　　元老们无声地对视。</p>
+<p>　　这确实是个合理的解释，高阶的龙族血统确实能敏锐地觉察到身边怀有敌意的人，如果监视者能力低下，反倒是更好的选择。</p>
+<p>　　“他的能力是什么？能够杀死龙王的能力，是某种超高阶言灵么？”</p>
+<p>　　芬格尔愣了一下，“这我倒真是不知道，除了游戏打得很好，说烂话说得特别溜，看不出有什么过人之处。”</p>
+<p>　　“他的情绪怎么样？是那种容易冲动的性格么？”</p>
+<p>　　芬格尔想了想，“那倒不是，以他的性格我觉得最适合当个网站管理员。”</p>
+<p>　　元老们陷入了沉默。</p>
+<p>　　这个情报看似解释了很多的事，却又让眼下的局面变得更加错综复杂。</p>
+<p>　　一个来自中国的男孩，其他一切都正常，唯一的问题就是发起火来会杀死龙王。</p>
+<p>　　他到底是什么东西？他从哪里来？</p>
+<p>　　一个掌管了学院近百年的秘党领袖，如果把全世界的屠龙者看作一支军队的话，他无疑是这支军队的将军，可他藏有一件恐怖的屠龙武器，却不愿秘党的其他人知道。</p>
+<p>　　他怎么找到路明非的？他的屠龙计划中有没有其他不可告人的秘密？又是什么样的人能在一瞬间重创他？</p>
+<p>　　所有的谜团相互勾连在一起，隐隐构成了一个庞大的迷宫。</p>
+<p>　　米诺斯的迷宫中困着米诺陶洛斯，那个牛首人身的恐怖怪物，这个迷宫里困着什么东西？</p>
+<p>　　“既然是能够杀死龙王的武器，那么务必立刻回收。”贝奥武夫打破了沉默，“对路明非和陈墨瞳的最高级缉捕令应该立刻下达，让EVA把所有计算资源集中用于搜捕他们！”</p>
+<p>　　恺撒霍地起身，想要说什么。</p>
+<p>　　他明白这条命令的言外之意，所谓最高级别的缉捕令，以往的对象都是龙王，这种缉捕令往往都伴随着武力授权。</p>
+<p>　　换而言之，它的意思并不是把谁谁平安地带回学院来，而是“活要见人死要见尸”。</p>
+<p>　　“如果他是我们对龙王最有效的武器，我们应该首先确保他的安全。”阿巴斯抢先说出了恺撒想说的话。</p>
+<p>　　“先生们，一件自己有思想的武器，强大到可以毁灭龙王，这件武器如果不能被控制，那最好被毁掉。”贝奥武夫凝视阿巴斯和恺撒的眼睛。</p>
+
+    </article>
+    <!-- license  -->
+    
+        <div class="license-wrapper">
+            <p>原文作者：<a href="hyywestwood.github.io">没头脑和不高兴</a>
+            </p><p>原文链接：<a href="hyywestwood.github.io/2019/03/28/龙族5-第7-10章/">hyywestwood.github.io/2019/03/28/龙族5-第7-10章/</a>
+            </p><p>发表日期：<a href="hyywestwood.github.io/2019/03/28/龙族5-第7-10章/">March 28th 2019, 4:44:05 pm</a>
+            </p><p>更新日期：<a href="hyywestwood.github.io/2019/03/28/龙族5-第7-10章/">March 28th 2019, 4:47:56 pm</a>
+            </p><p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
+    
+    <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+                <div class="nextSlogan">Next Post</div>
+                <a href="/2019/03/28/龙族5-第11-14章/" title="龙族5-第11-14章">
+                    <div class="nextTitle">龙族5-第11-14章</div>
+                </a>
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href="/2019/03/28/龙族5-第3-6章/" title="龙族5-第3-6章">
+                    <div class="prevTitle">龙族5-第3-6章</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
+    
+    
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
+</main>
+            <!-- profile -->
+            
+        </div>
+        <footer class="footer footer-unloaded">
+    <!-- social  -->
+    
+    <div class="social">
+        
+    
+        
+            
+                <a href="mailto:1554148540@qq.com" class="iconfont-archer email" title="email"></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/hyywestwood" class="iconfont-archer github" target="_blank" title="github"></a>
+            
+        
+    
+        
+            
+                <span class="iconfont-archer wechat" title="wechat">
+                  
+                  <img class="profile-qr" src="/assets/wechatqr.jpg">
+                </span>
+            
+        
+    
+        
+            
+                <span class="iconfont-archer qq" title="qq">
+                  
+                  <img class="profile-qr" src="/assets/qqqr.jpg">
+                </span>
+            
+        
+    
+        
+            
+                <a href="https://space.bilibili.com/12196079" class="iconfont-archer bilibili" target="_blank" title="bilibili"></a>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    </div>
+    
+    <!-- powered by Hexo  -->
+    <div class="copyright">
+        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span><span class="iconfont-archer power">&#xe635;</span><span id="theme-info">theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">Archer</a></span>
+    </div>
+    <!-- 不蒜子  -->
+    
+    <div class="busuanzi-container">
+    
+     
+    <span id="busuanzi_container_site_pv">PV: <span id="busuanzi_value_site_pv"></span> :)</span>
+    
+    </div>
+    
+</footer>
+    </div>
+    <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#龙族五-第7章-全民公敌（6）"><span class="toc-number">1.</span> <span class="toc-text">龙族五 第7章 全民公敌（6）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#龙族v-第8章-全民公敌（7）"><span class="toc-number">2.</span> <span class="toc-text">龙族v 第8章 全民公敌（7）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#龙族v-第9章-全民公敌（8）"><span class="toc-number">3.</span> <span class="toc-text">龙族v 第9章 全民公敌（8）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#龙族5-第10章-全民公敌（9）"><span class="toc-number">4.</span> <span class="toc-text">龙族5 第10章 全民公敌（9）</span></a></li></ol>
+    </div>
+    
+    <div class="back-top iconfont-archer">&#xe639;</div>
+    <div class="sidebar sidebar-hide">
+    <ul class="sidebar-tabs sidebar-tabs-active-0">
+        <li class="sidebar-tab-archives"><span class="iconfont-archer">&#xe67d;</span><span class="tab-name">Archive</span></li>
+        <li class="sidebar-tab-tags"><span class="iconfont-archer">&#xe61b;</span><span class="tab-name">Tag</span></li>
+        <li class="sidebar-tab-categories"><span class="iconfont-archer">&#xe666;</span><span class="tab-name">Cate</span></li>
+    </ul>
+    <div class="sidebar-content sidebar-content-show-archive">
+          <div class="sidebar-panel-archives">
+    <!-- 在ejs中将archive按照时间排序 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-and-search">
+        <div class="total-archive">
+        Total : 10
+        </div>
+        <!-- search  -->
+        
+    </div>
+    
+    <div class="post-archive">
+    
+    
+    
+    
+    <div class="archive-year"> 2019 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/28</span><a class="archive-post-title" href="/2019/03/28/龙族5-第7-10章/">龙族5-第7-10章</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/28</span><a class="archive-post-title" href="/2019/03/28/龙族5-第19-12章/">龙族5-第19-12章</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/28</span><a class="archive-post-title" href="/2019/03/28/龙族5-第3-6章/">龙族5-第3-6章</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/28</span><a class="archive-post-title" href="/2019/03/28/龙族5-第11-14章/">龙族5-第11-14章</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/28</span><a class="archive-post-title" href="/2019/03/28/龙族5-第15-18章/">龙族5-第15-18章</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/28</span><a class="archive-post-title" href="/2019/03/28/Matplotlib使用/">Matplotlib使用</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/25</span><a class="archive-post-title" href="/2019/03/25/git学习总结/">git学习总结</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/25</span><a class="archive-post-title" href="/2019/03/25/longzu5 1-3zhang/">龙族5悼亡者的归来 1-3章在线阅读</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/22</span><a class="archive-post-title" href="/2019/03/22/hello-world/">Hello World</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/22</span><a class="archive-post-title" href="/2019/03/22/myfirstblog/">myfirstblog</a>
+        </li>
+    
+    </ul></div>
+  </div>
+        <div class="sidebar-panel-tags">
+    <div class="sidebar-tags-name">
+    
+        <span class="sidebar-tag-name" data-tags="龙族"><span class="iconfont-archer">&#xe606;</span>龙族</span>
+    
+    </div>
+    <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
+    <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
+    缺失模块。<br>
+    1、请确保node版本大于6.2<br>
+    2、在博客根目录（注意不是archer根目录）执行以下命令：<br>
+    <span style="color: #f75357; font-size: 1rem; line-height: 2rem;">npm i hexo-generator-json-content --save</span><br>
+    3、在根目录_config.yml里添加配置：
+    <pre style="color: #787878; font-size: 0.6rem;">
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: true
+    tags: true</pre>
+    </div> 
+    <div class="sidebar-tags-list"></div>
+</div>
+        <div class="sidebar-panel-categories">
+    <div class="sidebar-categories-name">
+    
+        <span class="sidebar-category-name" data-categories="龙族"><span class="iconfont-archer">&#xe60a;</span>龙族</span>
+    
+    </div>
+    <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
+    <div class="sidebar-categories-list"></div>
+</div>
+    </div>
+</div> 
+    <script>
+    var siteMeta = {
+        root: "/",
+        author: "没头脑和不高兴"
+    }
+</script>
+    <!-- CDN failover -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+        if (typeof window.$ === 'undefined')
+        {
+            console.warn('jquery load from jsdelivr failed, will load local script')
+            document.write('<script src="/lib/jquery.min.js">\x3C/script>')
+        }
+    </script>
+    <script src="/scripts/main.js"></script>
+    <!-- algolia -->
+    
+    <!-- busuanzi  -->
+    
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    <!-- CNZZ  -->
+    
+    </div>
+    <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
+     
+    </body>
+</html>
+
+
